@@ -51,7 +51,7 @@ export function ResultProvider({ children }) {
 
 //fetches list of courses from api
   const getCourses = async () => {
-     await axios.get('http://localhost:5000/api/courses')
+     await axios.get('https://jeremys-fsjs-course-app.herokuapp.com/api/courses')
                 .then( res => setList(res.data))
                 .catch( err => {
                   console.log(err.message)

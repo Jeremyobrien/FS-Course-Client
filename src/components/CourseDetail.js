@@ -21,7 +21,7 @@ const CourseDetail = () => {
     //generates course specific information on load
     useEffect( ()=> {
             const getCourse = async () => {
-                 await axios.get(`http://localhost:5000/api/courses/${id}`)
+                 await axios.get(`https://jeremys-fsjs-course-app.herokuapp.com/courses/${id}`)
                                 .then( response => {
                                         setCourse(response.data)
                                         setIsLoading(false);
